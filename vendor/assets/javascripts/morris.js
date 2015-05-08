@@ -1365,7 +1365,7 @@ Licensed under the BSD-2-Clause License.
     Area.prototype.fillForSeries = function(i) {
       var color;
       color = Raphael.rgb2hsl(this.colorFor(this.data[i], i, 'line'));
-      return Raphael.hsl(color.h, this.options.behaveLikeLine ? color.s * 0.9 : color.s * 0.75, Math.min(0.98, this.options.behaveLikeLine ? color.l * 1.2 : color.l * 1.25));
+      return Raphael.hsl(color.h, this.options.behaveLikeLine ? color.s * 1.0 : color.s * 1.0, Math.min(1.0, this.options.behaveLikeLine ? color.l * 1.0 : color.l * 1.0));
     };
 
     Area.prototype.drawFilledPath = function(path, fill) {
